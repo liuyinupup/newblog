@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@home')->name('home');
+Route::resource('user','UserController');
+Route::get('logout','LoginController@logout')->name('logout');
+Route::get('login','LoginController@login')->name('login');
+Route::post('login','LoginController@store')->name('login');
+Route::get('admin','IndexController@admin_home')->name('admin_home');
+Route::resource('category','CategoryController');
+Route::resource('article','ArticleController');
+Route::get('admin/admin_user','IndexController@admin_user')->name('admin_user');
