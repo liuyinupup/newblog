@@ -34,7 +34,7 @@
                                     <button type="submit" class="btn ">删除</button>
                                 </form>
                                 <a href="" class="btn ">修改</a>
-                                <a href="" class="btn ">查看</a>
+                                <a href="{{route('article.show',$article)}}" class="btn btn-success">查看</a>
                             </div>
                         </td>
                     </tr>

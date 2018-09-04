@@ -1,5 +1,48 @@
 [
     {
+        "name": "aliyuncs/oss-sdk-php",
+        "version": "v2.3.0",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/aliyun/aliyun-oss-php-sdk.git",
+            "reference": "e69f57916678458642ac9d2fd341ae78a56996c8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/aliyun/aliyun-oss-php-sdk/zipball/e69f57916678458642ac9d2fd341ae78a56996c8",
+            "reference": "e69f57916678458642ac9d2fd341ae78a56996c8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "satooshi/php-coveralls": "~1.0"
+        },
+        "time": "2018-01-08T06:59:35+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "OSS\\": "src/OSS"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aliyuncs",
+                "homepage": "http://www.aliyun.com"
+            }
+        ],
+        "description": "Aliyun OSS SDK for PHP",
+        "homepage": "http://www.aliyun.com/product/oss/"
+    },
+    {
         "name": "barryvdh/laravel-ide-helper",
         "version": "v2.4.3",
         "version_normalized": "2.4.3.0",
@@ -167,6 +210,51 @@
             "languages",
             "laravel",
             "lpm"
+        ]
+    },
+    {
+        "name": "chenhua/laravel5-markdown-editor",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ichenhua/laravel5-markdown-editor.git",
+            "reference": "625346ca61a2bbc30ee5e629b1fc921581687d14"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ichenhua/laravel5-markdown-editor/zipball/625346ca61a2bbc30ee5e629b1fc921581687d14",
+            "reference": "625346ca61a2bbc30ee5e629b1fc921581687d14",
+            "shasum": ""
+        },
+        "require": {
+            "aliyuncs/oss-sdk-php": "^2.2",
+            "qiniu/php-sdk": "^7.2"
+        },
+        "time": "2017-11-09T03:45:57+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Chenhua\\MarkdownEditor\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "chenhua",
+                "email": "276004561@qq.com"
+            }
+        ],
+        "description": "The best Markdown Editor of Laravel 5",
+        "homepage": "http://www.81f7.com",
+        "keywords": [
+            "editor",
+            "laravel",
+            "markdown"
         ]
     },
     {
@@ -1062,6 +1150,48 @@
         ]
     },
     {
+        "name": "laravelchen/laravel-editormd",
+        "version": "2.5.5",
+        "version_normalized": "2.5.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/LaravelChen/laravel-editormd.git",
+            "reference": "b3b25a063bef30f5af8f172ac137cb4bd7d3bca5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/LaravelChen/laravel-editormd/zipball/b3b25a063bef30f5af8f172ac137cb4bd7d3bca5",
+            "reference": "b3b25a063bef30f5af8f172ac137cb4bd7d3bca5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3",
+            "zgldh/qiniu-laravel-storage": "^0.7.0"
+        },
+        "time": "2017-08-03T04:45:44+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "LaravelChen\\Editormd\\": "src/"
+            },
+            "files": [
+                "src/helper.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "LaravelChen",
+                "email": "848407695@qq.com"
+            }
+        ],
+        "description": "laravel-editor-mb"
+    },
+    {
         "name": "league/flysystem",
         "version": "1.0.45",
         "version_normalized": "1.0.45.0",
@@ -1145,6 +1275,53 @@
             "s3",
             "sftp",
             "storage"
+        ]
+    },
+    {
+        "name": "maxhoffmann/parsedown-laravel",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maxhoffmann/parsedown-laravel.git",
+            "reference": "0499236974239d2193c12e7925b8178d9af8bc4e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maxhoffmann/parsedown-laravel/zipball/0499236974239d2193c12e7925b8178d9af8bc4e",
+            "reference": "0499236974239d2193c12e7925b8178d9af8bc4e",
+            "shasum": ""
+        },
+        "require": {
+            "erusev/parsedown": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-12-13T23:54:04+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "MaxHoffmann\\Parsedown": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Maximilian Hoffmann",
+                "email": "max@maximilianhoffmann.com"
+            }
+        ],
+        "description": "A parsedown (markdown) wrapper for Laravel ",
+        "homepage": "https://github.com/maxhoffmann/parsedown-laravel",
+        "keywords": [
+            "Laravel 4",
+            "laravel",
+            "markdown",
+            "parsedown",
+            "php"
         ]
     },
     {
@@ -2465,6 +2642,59 @@
             "console",
             "interactive",
             "shell"
+        ]
+    },
+    {
+        "name": "qiniu/php-sdk",
+        "version": "v7.2.6",
+        "version_normalized": "7.2.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/qiniu/php-sdk.git",
+            "reference": "305ce1c1c0c71f794661fe45a96facf61ef96c5d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/qiniu/php-sdk/zipball/305ce1c1c0c71f794661fe45a96facf61ef96c5d",
+            "reference": "305ce1c1c0c71f794661fe45a96facf61ef96c5d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~2.3"
+        },
+        "time": "2018-05-18T04:37:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Qiniu\\": "src/Qiniu"
+            },
+            "files": [
+                "src/Qiniu/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Qiniu",
+                "email": "sdk@qiniu.com",
+                "homepage": "http://www.qiniu.com"
+            }
+        ],
+        "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
+        "homepage": "http://developer.qiniu.com/",
+        "keywords": [
+            "cloud",
+            "qiniu",
+            "sdk",
+            "storage"
         ]
     },
     {
@@ -4343,6 +4573,60 @@
             "assert",
             "check",
             "validate"
+        ]
+    },
+    {
+        "name": "zgldh/qiniu-laravel-storage",
+        "version": "v0.7.0",
+        "version_normalized": "0.7.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zgldh/qiniu-laravel-storage.git",
+            "reference": "1651af398c46e994df4179cfa41bf80cb025e7e0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zgldh/qiniu-laravel-storage/zipball/1651af398c46e994df4179cfa41bf80cb025e7e0",
+            "reference": "1651af398c46e994df4179cfa41bf80cb025e7e0",
+            "shasum": ""
+        },
+        "require": {
+            "league/flysystem": "^1.0",
+            "php": ">=5.3.3",
+            "qiniu/php-sdk": "^7.0"
+        },
+        "time": "2017-07-12T14:34:41+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "zgldh\\QiniuStorage\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "zgldh",
+                "email": "zgldh@hotmail.com",
+                "role": "Original Developer"
+            },
+            {
+                "name": "abcsun",
+                "email": "chenglongsun_nj@163.com",
+                "homepage": "http://github.com/abcsun",
+                "role": "Developer"
+            }
+        ],
+        "description": "Qiniu Resource (Cloud) Storage SDK for Laravel 5",
+        "keywords": [
+            "cloud",
+            "laravel",
+            "qiniu",
+            "sdk",
+            "storage"
         ]
     }
 ]

@@ -37,7 +37,16 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data=$this->validate($request,[
+            'order'=>'required',
+            'cate_id'=>'required',
+            'content'=>'required',
+            'title'=>'required',
+        ]);
+
+        Article::create($data);
+        session()->flash('success','添加文章成功');
+        return redirect()->route('article.index');
     }
 
     /**
@@ -48,7 +57,7 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        return view('admin.article.admin_article_show',compact('article'));
     }
 
     /**

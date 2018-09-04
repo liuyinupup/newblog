@@ -120,7 +120,10 @@ return [
     */
 
     'providers' => [
+
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        LaravelChen\Editormd\EditorMdProvider::class,
+        Chenhua\MarkdownEditor\MarkdownEditorServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...
@@ -175,6 +178,7 @@ return [
     */
 
     'aliases' => [
+        'MarkdownEditor' => Chenhua\MarkdownEditor\Facades\MarkdownEditor::class,
 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
