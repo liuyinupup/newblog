@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+    @yield('css/js')
 </head>
 <body>
 <div class="container">
@@ -49,12 +50,12 @@
     @yield('nav')
     <div class="row">
         <div class="col-sm-2 ">
-            <ul class="nav flex-column bg-dark">
+            <ul class="nav flex-column " style="background-color: #d6d8d9">
                 <li class="nav-item">
                     <a class="nav-link active" href="{{route('category.index')}}">目录管理</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">文章管理</a>
+                    <a class="nav-link" href="{{route('article.index')}}">文章管理</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">用户管理</a>
@@ -66,9 +67,8 @@
         </div>
         <div class="col-sm-10 "> @yield('content')</div>
     </div>
-
 </div>
-
+@yield('script')
 <script type="text/javascript" src="{{ URL::asset('js/app.js')}}"></script>
 </body>
 </html>

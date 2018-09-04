@@ -6,7 +6,7 @@
     <div class="card">
         <div class="card-header">
             文章列表
-            <a href="#">添加文章</a>
+            <a href="{{route('article.create')}}">添加文章</a>
         </div>
         <div class="card-body">
             <table class="table">
@@ -43,7 +43,7 @@
             </table>
         </div>
         <div class="card-footer text-muted">
-            {{$categories->links()}}
+            {{$articles->links()}}
         </div>
     </div>
 @endsection

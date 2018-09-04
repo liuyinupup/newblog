@@ -19,4 +19,3 @@ Route::post('login','LoginController@store')->name('login');
 Route::get('admin','IndexController@admin_home')->name('admin_home');
 Route::resource('category','CategoryController');
 Route::resource('article','ArticleController');
-Route::get('admin/admin_user','IndexController@admin_user')->name('admin_user');
